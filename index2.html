@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>This is a test</title>
+		<script>
+			var request = navigator.mozApps.install("/Firefox-OS-Boilerplate-App/manifest.webapp");
+			request.onsuccess = function(){
+				document.write("Install done!!!");
+			};
+
+			request.onerror = function() {
+				document.write("Install failed!!!")
+				
+			};
+		
+					</script>	
+	</head>
+
+	<body>
+		<button onclick="JavaScript:request()">Test</button>
+	</body>
+</html>
